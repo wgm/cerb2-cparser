@@ -1,0 +1,77 @@
+[2004.04.13 11:29:56 19109] TRACE cpop3_init(): malloc'ing memory for structure
+[2004.04.13 11:29:56 19109] TRACE csocket_new(): malloc'ing memory for socket
+[2004.04.13 11:29:56 19109] TRACE csocket_new(): finished malloc'ing memory for socket
+[2004.04.13 11:29:56 19109] TRACE csocket_set_port(): checking parameters
+[2004.04.13 11:29:56 19109] DEBUG csocket_set_port(): port set to 110
+[2004.04.13 11:29:56 19109] TRACE csocket_set_timeout(): checking parameters
+[2004.04.13 11:29:56 19109] DEBUG csocket_set_timeout(): timeout set to 30
+[2004.04.13 11:29:56 19109] TRACE csocket_gethostbyname(): checking parameters
+[2004.04.13 11:29:56 19109] ERROR csocket_gethostbyname(): server was NULL
+[2004.04.13 11:29:56 19109] ERROR cpop3_init(): failed to init sockets
+[2004.04.13 11:29:56 19109] TRACE cpop3_connect(): connecting
+[2004.04.13 11:30:38 19128] TRACE cpop3_init(): malloc'ing memory for structure
+[2004.04.13 11:30:38 19128] TRACE csocket_new(): malloc'ing memory for socket
+[2004.04.13 11:30:38 19128] TRACE csocket_new(): finished malloc'ing memory for socket
+[2004.04.13 11:30:38 19128] TRACE csocket_set_port(): checking parameters
+[2004.04.13 11:30:38 19128] DEBUG csocket_set_port(): port set to 110
+[2004.04.13 11:30:38 19128] TRACE csocket_set_timeout(): checking parameters
+[2004.04.13 11:30:38 19128] DEBUG csocket_set_timeout(): timeout set to 30
+[2004.04.13 11:30:38 19128] TRACE csocket_gethostbyname(): checking parameters
+[2004.04.13 11:30:38 19128] TRACE csocket_gethostbyname(): searching for webgroupmedia.com
+[2004.04.13 11:30:40 19128] TRACE csocket_gethostbyname(): copying data from static src
+[2004.04.13 11:30:40 19128] DEBUG csocket_gethostbyname(): success, returning
+[2004.04.13 11:30:40 19128] TRACE csocket_set_hptosa(): checking parameters
+[2004.04.13 11:30:40 19128] TRACE csocket_set_hptosa(): setting sock->sa from sock->hp
+[2004.04.13 11:30:40 19128] DEBUG csocket_set_hptosa(): sock->sa set from sock->hp info
+[2004.04.13 11:30:40 19128] TRACE csocket_set_type(): checking parameters
+[2004.04.13 11:30:40 19128] DEBUG csocket_set_type(): socket type set to 1
+[2004.04.13 11:30:40 19128] TRACE csocket_socket(): initializing socket
+[2004.04.13 11:30:40 19128] DEBUG csocket_socket()::socket() returned 4
+[2004.04.13 11:30:40 19128] TRACE csocket_socket(): finished initializing socket
+[2004.04.13 11:30:40 19128] DEBUG cpop3_init(): successful
+[2004.04.13 11:30:40 19128] TRACE cpop3_connect(): connecting
+[2004.04.13 11:30:40 19128] TRACE csocket_connect(): trying to connect
+[2004.04.13 11:30:40 19128] DEBUG csocket_connect(): connection was successful
+[2004.04.13 11:30:40 19128] DEBUG cpop3_connect(): connection was successful
+[2004.04.13 11:30:40 19128] TRACE csocket_read(): starting data read
+[2004.04.13 11:30:40 19128] DEBUG csocket_read()::file descriptor ready for reading
+[2004.04.13 11:30:40 19128] DEBUG csocket_read(): read 18 bytes
+[2004.04.13 11:30:40 19128] TRACE cpop3_iserror(): checking for error return code
+[2004.04.13 11:30:40 19128] DEBUG POP3:: +OK Hello there.
+
+[2004.04.13 11:30:40 19128] TRACE cpop3_user(): sending user
+[2004.04.13 11:30:40 19128] TRACE csocket_write(): starting data write
+[2004.04.13 11:30:40 19128] DEBUG csocket_write(): wrote 11 bytes
+[2004.04.13 11:30:40 19128] TRACE csocket_read(): starting data read
+[2004.04.13 11:30:40 19128] DEBUG csocket_read()::file descriptor ready for reading
+[2004.04.13 11:30:40 19128] DEBUG csocket_read(): read 24 bytes
+[2004.04.13 11:30:40 19128] TRACE cpop3_iserror(): checking for error return code
+[2004.04.13 11:30:40 19128] DEBUG POP3:: +OK Password required.
+
+[2004.04.13 11:30:40 19128] DEBUG cpop3_user(): finished sending user
+[2004.04.13 11:30:40 19128] TRACE cpop3_pass(): sending password
+[2004.04.13 11:30:40 19128] TRACE csocket_write(): starting data write
+[2004.04.13 11:30:40 19128] DEBUG csocket_write(): wrote 13 bytes
+[2004.04.13 11:30:40 19128] TRACE csocket_read(): starting data read
+[2004.04.13 11:30:47 19128] DEBUG csocket_read()::file descriptor ready for reading
+[2004.04.13 11:30:47 19128] DEBUG csocket_read(): read 20 bytes
+[2004.04.13 11:30:47 19128] TRACE cpop3_iserror(): checking for error return code
+[2004.04.13 11:30:47 19128] DEBUG POP3:: -ERR Login failed.
+
+[2004.04.13 11:30:47 19128] DEBUG cpop3_pass(): finished sending password
+[2004.04.13 11:30:47 19128] TRACE cpop3_quit(): quitting
+[2004.04.13 11:30:47 19128] TRACE csocket_write(): starting data write
+[2004.04.13 11:30:47 19128] DEBUG csocket_write(): wrote 6 bytes
+[2004.04.13 11:30:47 19128] TRACE csocket_read(): starting data read
+[2004.04.13 11:30:47 19128] DEBUG csocket_read()::file descriptor ready for reading
+[2004.04.13 11:30:47 19128] DEBUG csocket_read(): read 28 bytes
+[2004.04.13 11:30:47 19128] TRACE cpop3_iserror(): checking for error return code
+[2004.04.13 11:30:47 19128] DEBUG POP3:: +OK Better luck next time.
+
+[2004.04.13 11:30:47 19128] DEBUG cpop3_quit(): finished quitting
+[2004.04.13 11:30:47 19128] TRACE cpop3_disconnect(): disconnecting
+[2004.04.13 11:30:47 19128] TRACE csocket_close(): closing socket
+[2004.04.13 11:30:47 19128] DEBUG csocket_close(): socket closed
+[2004.04.13 11:30:47 19128] TRACE csocket_free(): free'ing malloc'd socket memory
+[2004.04.13 11:30:47 19128] TRACE csocket_free(): finished free'ing malloc'd socket memory
+[2004.04.13 11:30:47 19128] TRACE cpop3_disconnect(): finished disconnecting

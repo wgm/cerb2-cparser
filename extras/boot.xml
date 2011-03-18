@@ -1,0 +1,69 @@
+<configuration>
+  <xsp user="server_user" password="server_password" https="false">
+[[ REPLACE THIS LINE WITH YOUR KEY ]]
+  </xsp>
+
+  <debug>
+    <xml value="0" />
+    <curl value="0" />
+  </debug>
+
+<!-- if using POP3, remove this line!
+  <pop3>
+    <host value="webgroupmedia.com" />
+    <user value="spam" />
+    <password value="sp@mmy" />
+    <port value="110" />
+    <delete value="false" />
+  </pop3>
+if using POP3, remove this line! -->
+
+  <global>
+    <!--
+      tmp_dir: The location cerberus will store a copy of the emails it is
+               given. It should include the trailing slash:
+               *nix: /tmp/
+               Win: C:\temp\
+    -->
+    <tmp_dir value="/tmp/" />
+
+    <!--
+      max_pop3_messages: Limit the number of emails that the parser pulls from POP3 per run.
+    -->
+    <max_pop3_messages value="10" />
+
+    <!--
+      max_pop3_delete (default true): Delete everything we can from the POP3 box after running. The parser will normally try to delete everything, set this to false if you want to leave failed messages in the pop3 box. This means you'll have to log in and clear out bad mail every now and then. It also means that you'll have an easier way to see if any email has failed to enter your helpdesk. Just log in to the POP3 box.
+    -->
+    <max_pop3_delete value="true" />
+
+    <!--
+      pop3_timeout: Maximum amount of time (in seconds) to wait for the POP3 server to send data before going on to the next message.
+                    This is good for when the POP3 server doesn't terminate the message properly.
+                    DEFAULT: 30 seconds
+    -->
+    <pop3_timeout value="15" />
+
+    <!--
+      libcurl: Set this to the location of your own libcurl compiled library if you want to not use the statically compiled version
+               This can be useful if you are getting NSLOOKUP problems or similar
+    -->
+    <libcurl value="./libcurl.so.3" />
+  </global>
+  <!-- If you are going to use https in the url's of the parser lines you'll need to configure
+       this area after uncommenting the needed sections. -->
+  <ssl>
+      <!-- Set this path to the included curl-ca-bundle.crt file -->
+    <!--
+    <cainfo value="/path/to/curl-ca-bundle.crt" />
+    -->
+
+      <!-- Verification levels for the SSL certificate from HTTPS
+        0 = do not verify, just use it.
+        1 = verify that it has a domain name in it, we do not care which domain
+        2 = (default) verify that the domain matches where we are connecting to -->
+    <!--
+    <verify value="0" />
+    -->
+  </ssl>
+</configuration>
