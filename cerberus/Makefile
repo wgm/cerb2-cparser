@@ -23,7 +23,7 @@ all: $(TARGET)
 
 $(TARGET):  $(OBJECTS)
 	test -d ../build/ || mkdir -p ../build/
-	$(LD) $(LDFLAGS) -o $(TARGET) $(OBJECTS) $(LIBPATH) -Wl,-Bstatic ../build/libcmime.a ../build/libcxml.a ../build/libcpop3.a ../build/libcsocket.a ../build/libclog.a ../build/libcfile.a ../build/libcdict.a ../build/libcdata.a ../build/libcstring.a ../build/librsa.a ../build/libcutest.a -lexpat $(LIBS)
+	$(LD) $(LDFLAGS) -o $(TARGET) $(OBJECTS) $(LIBPATH) -Wl ../build/libcmime.a ../build/libcxml.a ../build/libcpop3.a ../build/libcsocket.a ../build/libclog.a ../build/libcfile.a ../build/libcdict.a ../build/libcdata.a ../build/libcstring.a ../build/librsa.a ../build/libcutest.a -lexpat $(LIBS)
 
 clean:
 	-rm -f $(OBJECTS) 
