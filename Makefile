@@ -8,6 +8,26 @@ OS-VER = $(shell uname -r)
 OS = ${OS-NAME}-${OS-VER}
 
 ##----------------------------------
+# Ubuntu/Debian 
+##----------------------------------
+#LIBS = -Wl,-Bdynami -ldl -lc
+#CFLAGS = -O -Wall -pipe -DBUILDNUMBER=\"${BUILDNUMBER}\"
+#INCPATH = -I/usr/local/include -I../opt/include -I../cutest/
+#LIBPATH = -L../opt/lib -L/usr/local/lib
+#LDFLAGS =
+#LD = gcc
+#RANLIB = ranlib
+
+##LIBS = -lmemwatch -lefence
+##LIBS = -lefence -Wl,-Bdynami -ldl -lc
+##LIBS = -Wl,-Bdynami -lc -licuuc
+##LIBS = -Wl,-Bdynami -lc
+##CFLAGS = -g3 -Wall -pipe -DBUILDNUMBER=\"${BUILDNUMBER}\"
+##CFLAGS = -Wall -pipe -DBUILDNUMBER=\"${BUILDNUMBER}\"
+##CFLAGS = -g3 -pg -Wall -DMEMWATCH=1 -DBUILDNUMBER=\"${BUILDNUMBER}\"
+##CFLAGS = -g3 -pipe -Wall -DBUILDNUMBER=\"${BUILDNUMBER}\"
+
+##----------------------------------
 # BSD RH9
 ##----------------------------------
 #INCPATH = -I/usr/local/include -I../opt/include -I../cutest/
