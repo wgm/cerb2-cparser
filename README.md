@@ -11,9 +11,21 @@ What's this?
 ------------
 This is the source code to the command-line email parser that was used by Cerb2 and Cerb3.  This is deprecated code that is no longer officially supported.  We're open sourcing this code so that clients who still depend on these old versions of the project can make necessary changes (such as IPv6 support).
 
+Requirements
+------------
+* ICU Unicode dev libraries (libicu*-dev)
+    * Debian/Ubuntu: `sudo apt-get install libicu36-dev`
+    * Mac OS X: `sudo port install icu`
+* cURL dev libraries
+    * Debian/Ubuntu: `sudo apt-get install libcurl3-dev`
+    * Mac OS X: `sudo port install icu`
+
 Installation
 ------------
-* (TBD)
+* Checkout/unzip the files somewhere.
+* Edit `Makefile` and uncomment the `#` lines for your os/distribution/architecture (ignore the `##` lines)
+* `make`
+* If all goes well the compiled parser will be in the `build/` directory.
 
 Credits
 -------
