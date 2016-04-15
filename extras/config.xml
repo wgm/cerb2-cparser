@@ -5,7 +5,6 @@
   </debug>
   <key>
     <parser user="name" password="password" url="http://localhost/cerberus-gui/parser.php" />
-[[ REPLACE THIS LINE WITH YOUR KEY ]]
   </key>
 
 <!-- if using POP3, remove this line!
